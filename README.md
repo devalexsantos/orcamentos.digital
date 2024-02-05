@@ -18,3 +18,4 @@ Web platform to create budgets quickly and easily.
 - [ ] Must be mobile first.
 - [X] Use shadcn/ui for visual components.
 - [X] Use tailwind for styling.
+- [X] Use clerk for authenticate.
