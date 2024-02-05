@@ -1,4 +1,4 @@
-import { Dashboard } from '@/pages/Dashboard'
+import { Home } from '@/pages/Home'
 import { createBrowserRouter } from 'react-router-dom'
 import AppLayout from './layout/app'
 
@@ -9,7 +9,7 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Dashboard />,
+        element: <Home />,
       },
     ],
   },
