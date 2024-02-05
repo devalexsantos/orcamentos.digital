@@ -40,11 +40,11 @@ export function BudgetItemPreview({ budget }: BudgetItemPreviewProps) {
         </span>
       </CardContent>
       <CardFooter>
-        <div className="w-full flex justify-between">
-          <span className="text-sm text-muted-foreground">
+        <div className="w-full flex gap-3">
+          <span className="text-xs text-muted-foreground">
             Data: 05/02/2024
           </span>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-xs text-muted-foreground">
             Venc.: 10/02/2024
           </span>
         </div>

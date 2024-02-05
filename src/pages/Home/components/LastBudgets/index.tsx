@@ -53,7 +53,7 @@ export function LastBudgets() {
           <BudgetItemPreview budget={budget} key={index} />
         ))}
       </div>
-      <Button>Ver tudo</Button>
+      <Button className="mt-8">Ver tudo</Button>
     </div>
   )
 }
