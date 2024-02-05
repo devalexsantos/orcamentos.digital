@@ -1,3 +1,9 @@
+import { SearchBar } from '@/components/search-bar'
+
 export function Dashboard() {
-  return <div>Dashboard</div>
+  return (
+    <div>
+      <SearchBar />
+    </div>
+  )
 }
