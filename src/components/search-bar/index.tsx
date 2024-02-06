@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 
 export function SearchBar() {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-3 mb-4">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button className="flex items-center">
