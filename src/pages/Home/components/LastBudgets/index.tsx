@@ -1,5 +1,7 @@
 import { BudgetItemPreview } from '@/components/budget-item-preview'
 import { Button } from '@/components/ui/button'
+import { PlusCircle } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export function LastBudgets() {
   const lastBudgets = [
@@ -47,7 +49,15 @@ export function LastBudgets() {
 
   return (
     <div className="flex flex-col gap-3 pb-8">
-      <span className="text-sm text-muted-foreground">Últimos criados:</span>
+      <div className="flex justify-between items-center">
+        <span className="text-sm text-muted-foreground">Últimos criados:</span>
+        <Button asChild className="flex items-center gap-2" size="sm">
+          <Link to="/create-budget">
+            <PlusCircle size={18} />
+            Criar novo
+          </Link>
+        </Button>
+      </div>
       <div className="flex flex-col gap-3 sm:flex-row flex-wrap">
         {lastBudgets.map((budget, index) => (
           <BudgetItemPreview budget={budget} key={index} />
