@@ -1,4 +1,3 @@
-import { SearchBar } from '@/components/search-bar'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import {
@@ -14,7 +13,6 @@ import { Edit, Link, Share, Trash } from 'lucide-react'
 export default function Budget() {
   return (
     <div className="flex flex-col gap-4">
-      <SearchBar />
       <div className="flex justify-end gap-4 items-center mt-4">
         <Link
           size={22}

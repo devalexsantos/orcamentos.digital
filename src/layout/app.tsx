@@ -1,3 +1,4 @@
+import { SearchBar } from '@/components/search-bar'
 import {
   ClerkProvider,
   SignInButton,
@@ -21,7 +22,8 @@ export default function AppLayout() {
         </SignedOut>
       </div>
       <SignedIn>
-        <div className="container p-8 max-w-4xl">
+        <div className="container p-8 flex flex-col gap-4 max-w-4xl">
+          <SearchBar />
           <Outlet />
         </div>
       </SignedIn>

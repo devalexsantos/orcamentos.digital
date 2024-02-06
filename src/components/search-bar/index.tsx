@@ -8,6 +8,7 @@ import {
 import { Button } from '../ui/button'
 import { Menu, Search } from 'lucide-react'
 import { Input } from '../ui/input'
+import { Link } from 'react-router-dom'
 
 export function SearchBar() {
   return (
@@ -20,6 +21,10 @@ export function SearchBar() {
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start">
           <DropdownMenuItem>Início</DropdownMenuItem>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem asChild>
+            <Link to="/create-budget">Novo Orçamento</Link>
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem>Sair</DropdownMenuItem>
         </DropdownMenuContent>
