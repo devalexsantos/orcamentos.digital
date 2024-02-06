@@ -21,7 +21,7 @@ export default function AppLayout() {
         </SignedOut>
       </div>
       <SignedIn>
-        <div className="container p-8">
+        <div className="container p-8 max-w-4xl">
           <Outlet />
         </div>
       </SignedIn>
